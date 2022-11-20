@@ -30,22 +30,22 @@ let values = []
 onValue(bpRef, (snapshot) => {
     const data = snapshot.val();
     console.log(data)
-    values.push(data);
+    values[0] = data;
 })
 onValue(bmiRef, (snapshot) => {
     const data = snapshot.val();
     console.log(data)
-    values.push(data);
+    values[1] = data;
 })
 onValue(vitalRef, (snapshot) => {
     const data = snapshot.val();
     console.log(data)
-    values.push(data);
+    values[2] = data;
 })
 onValue(diabeticRef, (snapshot) => {
     const data = snapshot.val();
     console.log(data)
-    values.push(data);
+    values[3] = data;
 })
 
 
