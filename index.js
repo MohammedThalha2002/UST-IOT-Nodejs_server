@@ -1,6 +1,8 @@
 
 import express from 'express';
 const app = express()
+var cors = require('cors')
+app.use(cors)
 const port = 3000
 import { initializeApp } from "firebase/app";
 import { getDatabase, onValue, ref } from 'firebase/database'
